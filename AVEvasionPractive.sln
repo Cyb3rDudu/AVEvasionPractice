@@ -5,7 +5,7 @@ VisualStudioVersion = 17.9.34607.119
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "00-BaseCode", "00-BaseCode\00-BaseCode.csproj", "{C912A8AF-2516-4A3F-A0A5-CC0C966CA88B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01_AllocateAndFill", "01_AllocateAndFill\01_AllocateAndFill.csproj", "{AA531F90-432C-4A3B-BE81-398B0382602F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-AllocateAndFill", "01_AllocateAndFill\01-AllocateAndFill.csproj", "{AA531F90-432C-4A3B-BE81-398B0382602F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
