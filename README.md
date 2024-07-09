@@ -2,11 +2,14 @@
 
 A place for practicing various evasion techniques in C#. The base code will remain constant for future work, while the evasion techniques will vary. Many techniques are inspired by [this PDF](https://blog.sevagas.com/IMG/pdf/BypassAVDynamics.pdf).
 
-### 00-BaseCode.cs ###
+### 00-BaseCode
 The base code that will remain constant across all trials.
 
-### 01-AllocateAndFill.cs ###
+### 01-AllocateAndFill
 Allocates a ~1.07GB byte array and fills it with zeros, then verifies if the last value is 0. The idea is that an antivirus engine will skip zeroing out all this memory, causing the program to terminate before the shellcode runner can be analyzed.
 
-### 02-ManyIterations.cs
+### 02-ManyIterations
 Loops nine hundred million times to discourage antivirus software from emulating the rest of the program.
+
+### 03-OpenSystemProcess
+This code attempts to open PID 4, which is a SYSTEM process. Normally, a regular user should not be able to open this process, while an antivirus engine might be able to. This would result in a null handle when executed by a legitimate user. The Win32 API OpenProcess is imported for this snippet. Since this API is commonly used in malicious code, this evasion technique might generate more detections. The value 0x001F0FFF is the hexadecimal representation of PROCESS_ALL_ACCESS.
