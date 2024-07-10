@@ -15,6 +15,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-AllocateAndFill", "01-Al
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-KnownPath", "06-KnownPath\06-KnownPath.csproj", "{E7620F85-B80D-4550-A77E-8A6270FB6DA3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-VirtualAllocExNuma", "06-VirtualAllocExNuma\06-VirtualAllocExNuma.csproj", "{41C58460-42C2-4F80-9113-FE8734C78101}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -45,6 +47,10 @@ Global
 		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{41C58460-42C2-4F80-9113-FE8734C78101}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{41C58460-42C2-4F80-9113-FE8734C78101}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{41C58460-42C2-4F80-9113-FE8734C78101}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{41C58460-42C2-4F80-9113-FE8734C78101}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
