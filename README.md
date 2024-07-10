@@ -17,3 +17,6 @@ This code attempts to open PID 4, which is a SYSTEM process. Normally, a regular
 ### 04-NonExistingURL.cs
 This code makes an HTTP request to a fictitious domain. If no response is received (the expected outcome), the shellcode runner will execute. If a response is received, it indicates potential interference. Antivirus sandboxes often cannot make outbound requests and may instead reply with a fake response to allow the code to continue executing. Therefore, if the code fails, it is likely running in the real world; otherwise, it might be in an AV sandbox.
 
+### 05-KnownPath.cs
+If the target's username is known, it may be possible to specify actions that will only execute in the context of that user. For example, in this code, a file is written to the desktop of the user "User". The contents of that file are then read back, and if they match what was written, the shellcode will execute.
+

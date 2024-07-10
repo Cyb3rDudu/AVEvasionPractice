@@ -13,6 +13,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "04-NonExistingURL", "04-Non
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "01-AllocateAndFill", "01-AllocateAndFill\01-AllocateAndFill.csproj", "{AA531F90-432C-4A3B-BE81-398B0382602F}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "06-KnownPath", "06-KnownPath\06-KnownPath.csproj", "{E7620F85-B80D-4550-A77E-8A6270FB6DA3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{AA531F90-432C-4A3B-BE81-398B0382602F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{AA531F90-432C-4A3B-BE81-398B0382602F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{AA531F90-432C-4A3B-BE81-398B0382602F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E7620F85-B80D-4550-A77E-8A6270FB6DA3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
