@@ -13,3 +13,7 @@ Loops nine hundred million times to discourage antivirus software from emulating
 
 ### 03-OpenSystemProcess
 This code attempts to open PID 4, which is a SYSTEM process. Normally, a regular user should not be able to open this process, while an antivirus engine might be able to. This would result in a null handle when executed by a legitimate user. The Win32 API OpenProcess is imported for this snippet. Since this API is commonly used in malicious code, this evasion technique might generate more detections. The value 0x001F0FFF is the hexadecimal representation of PROCESS_ALL_ACCESS.
+
+### 04-NonExistingURL.cs
+This code makes an HTTP request to a fictitious domain. If no response is received (the expected outcome), the shellcode runner will execute. If a response is received, it indicates potential interference. Antivirus sandboxes often cannot make outbound requests and may instead reply with a fake response to allow the code to continue executing. Therefore, if the code fails, it is likely running in the real world; otherwise, it might be in an AV sandbox.
+
