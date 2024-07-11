@@ -26,3 +26,5 @@ Some antivirus engines cannot emulate all known Windows APIs. If they encounter 
 ### 07-FlsAlloc
 Similar to logic in example 06, some AV emulators will return a failure when FlsAlloc is called. For reference, UInt32 is the C# equivalent of DWORD and IntPtr.Zero is equivalent to NULL. The value 0xFFFFFFFF equates to -1, representing a failure condition, and the original code uses FLS_OUT_OF_INDEXES.
 
+### 08-CheckProcessMemory
+In this example, GetProcessMemoryInfo is imported to gather information about the current process. If the current working set (the amount of memory a process requires in a given time interval) is less than 3.5MB, the shellcode executes. Much of this code can be found in the ["Sample Code" section](https://www.pinvoke.net/default.aspx/psapi.getprocessmemoryinfo).
