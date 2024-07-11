@@ -23,3 +23,6 @@ If the target's username is known, it may be possible to specify actions that wi
 ### 06-VirtualAllocExNuma
 Some antivirus engines cannot emulate all known Windows APIs. If they encounter an unknown API, they may stop examining the program. In this code, we import the Win32 API VirtualAllocExNuma, which is used to configure memory management in multiprocessing systems. If the allocated memory is not NULL, the shellcode will execute.
 
+### 07-FlsAlloc
+Similar to logic in example 06, some AV emulators will return a failure when FlsAlloc is called. For reference, UInt32 is the C# equivalent of DWORD and IntPtr.Zero is equivalent to NULL. The value 0xFFFFFFFF equates to -1, representing a failure condition, and the original code uses FLS_OUT_OF_INDEXES.
+
